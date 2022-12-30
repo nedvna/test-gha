@@ -23,6 +23,7 @@ jobs:
     container: ubuntu:22.04
     needs: job1
     steps:
+      - run: apt-get update && apt-get install -y zstd
       - uses: actions/cache/restore@v3
         with:
           path: README.md
