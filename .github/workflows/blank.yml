@@ -27,6 +27,7 @@ jobs:
     needs: job1
     steps:
       - run: echo $SECRET_VAR
+      - run: echo $NAME_SECRET
     #steps:
     #  - run: apt-get update && apt-get install -y zstd
     #  - uses: actions/cache/restore@v3
